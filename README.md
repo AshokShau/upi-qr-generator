@@ -4,12 +4,13 @@ A lightweight API for generating UPI QR codes and rendering a secure payment pag
 
 
 <p align="center">
-  <img src=".github/pay.png" 
+  <img src="https://raw.githubusercontent.com/AshokShau/upi-qr-generator/master/.github/pay.png" 
        alt="Pay Example" 
        width="300" 
        height="auto">
 </p>
 <p align="center"><em>Example of payment page</em></p>
+
 
 
 ## Features
