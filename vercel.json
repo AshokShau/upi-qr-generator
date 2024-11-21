@@ -4,8 +4,7 @@
     {
       "src": "/api/*.go",
       "use": "@vercel/go"
-    },
-    { "src": "static/*", "use": "@vercel/static"}
+    }
   ],
   "rewrites": [
     { "source": "/", "destination": "/api/index.go" },
