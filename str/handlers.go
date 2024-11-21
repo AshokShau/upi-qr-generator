@@ -11,7 +11,7 @@ import (
 )
 
 func Home(w http.ResponseWriter, _ *http.Request) {
-	tmpl, err := template.ParseFiles("static/index.html")
+	tmpl, err := template.New("index").Parse(Index)
 	if err != nil {
 		http.Error(w, "Error loading page", http.StatusInternalServerError)
 		return
@@ -71,7 +71,7 @@ func RenderPaymentPageHandler(w http.ResponseWriter, r *http.Request) {
 	amount := r.URL.Query().Get("amount")
 
 	// Load HTML template
-	tmpl, err := template.ParseFiles("static/template.html")
+	tmpl, err := template.New("payment").Parse(paymentHTML)
 	if err != nil {
 		http.Error(w, "Error loading page", http.StatusInternalServerError)
 		return

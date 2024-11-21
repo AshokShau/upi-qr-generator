@@ -2,6 +2,16 @@
 
 A lightweight API for generating UPI QR codes and rendering a secure payment page. This project is built using Go and the Gorilla Mux router.
 
+
+<p align="center">
+  <img src=".github/pay.png" 
+       alt="Pay Example" 
+       width="300" 
+       height="auto">
+</p>
+<p align="center"><em>Example of payment page</em></p>
+
+
 ## Features
 - Generate QR codes for UPI payments.
 - Serve a customizable payment page with UPI details.
@@ -39,6 +49,7 @@ upiQrGen/
 ├── main.go                    // Entry point of the application
 ├── str/
 │   ├── handlers.go            // Contains all HTTP handlers
+|   ├── files.go               // HTML files
 ├── static/
 │   ├── index.html             // Homepage with API usage info
 │   ├── styles.css             // CSS for styling the payment page
