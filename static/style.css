@@ -1,0 +1,96 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+.payment-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 18%;
+    border: 2px solid #4CAF50;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4CAF50;
+    margin: 0;
+}
+
+.qr-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.qr-container img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #4CAF50;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.upi-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.upi-button:hover {
+    background-color: #388E3C;
+}
+
+.details {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.details p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.details i {
+    color: #4CAF50;
+}
