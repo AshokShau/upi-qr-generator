@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "/api/*.go",
+      "use": "@vercel/go"
+    },
+    { "src": "static/*", "use": "@vercel/static"}
+  ],
+  "rewrites": [
+    { "source": "/", "destination": "/api/index.go" },
+    { "source": "/qr", "destination": "/api/qr.go" },
+    { "source": "/pay", "destination": "/api/pay.go" }
+  ]
+}
